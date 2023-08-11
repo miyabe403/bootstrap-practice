@@ -3,3 +3,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.header {
+  background-color: #ff00ff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 100px;
+  width: 200px;
+  background: lightcoral;
+  border: 1px solid green;
+  margin: 5px 0;
+  margin-right: 400px;
+}
+
+.menu {
+  height: 100px;
+  width: 200px;
+  background: lightcoral;
+  border: 1px solid green;
+  margin: 5px 0;
+  margin-right: 10px;
+  
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid green;
+  margin: 20px 20px;
+}
+
+.footer {
+  background-color: #ff00ff;
+  padding: 30px 20px;
+  
+}
+
+.footer1, .footer2, .footer3 {
+  height: 100px;
+  width: 700px;
+  background: lightcoral;
+  border: 1px solid green;
+  margin: 5px 0;
+  margin-right: 10px;
+} 
