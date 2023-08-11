@@ -9,54 +9,142 @@
   </head>
 
   <body>
-    <div class="header px-20 py-30 " style="background-color: #ff00ff;">
-      <div class="row mx-20 ">
-        <div class="col ">
-          <div class="logo " style="background-color: #fbb3ff;">logo</div>
+    <!-- 画面両端の余白調整 -->
+    <div class="container-fluid">
+      <!-- header用のdiv -->
+      <div class="header row px-3 py-4">
+        <div class="col-2">
+          <div class="logo">logo</div>
         </div>
-        <div class="col">
-          <div class="logo2 " style="background-color: #fbb3ff;"></div>
-        </div>
-        <div class="cols-4"></div>
-          <div class="menu" style="background-color: #fbb3ff;">menu1</div>
-          <div class="menu" style="background-color: #fbb3ff;">menu2</div>
-          <div class="menu" style="background-color: #fbb3ff;">menu3</div>
-          <div class="menu" style="background-color: #fbb3ff;">menu4</div>
-      </div>
-    </div>
-  
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4" style="background-color: #d8ffb6; height: 800px;">
-          <h2>sideber</h2>
-        </div>
-        <div class="col-lg-8" style="background-color: #00b522; height: 800px;">
-          <h2></h2>
+        <div class="col-6 offset-4">
           <div class="row">
-            <div class="box" style="background-color: #fff75a;">box</div>
-            <div class="box" style="background-color: #fff75a;">box</div>
-            <div class="box" style="background-color: #fff75a;">box</div>
-            <div class="box" style="background-color: #fff75a;">box</div>
-            <div class="box" style="background-color: #fff75a;">box</div>
-            <div class="box" style="background-color: #fff75a;">box</div>
-            <div class="box" style="background-color: #fff75a;">box</div>
-            <div class="box" style="background-color: #fff75a;">box</div>
-            <div class="box" style="background-color: #fff75a;">box</div>
+            <div class="col-3">
+              <!-- colクラスがpaddingを左右に持っているため、div子要素を作成し背景色を付けてpaddingに背景色がつくことを避ける -->
+              <div class="header-content">menu1</div>
+            </div>
+            <div class="col-3">
+              <div class="header-content">menu2</div>
+            </div>
+            <div class="col-3">
+              <div class="header-content">menu3</div>
+            </div>
+            <div class="col-3">
+              <div class="header-content">menu4</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class="footer px-20 py-30 justify-content-center" style="background-color: #52a1ff;">
-      <div class="row mx-20 container-fluid">
-        <div class="cols-2"></div>
-          <div class="footer1" style="background-color: #b6e7ff;">footer1</div>
-          <div class="footer2" style="background-color: #b6e7ff;">footer2</div>
+      
+      <!-- main用のdiv -->
+      <div class="main row justify-content-center">
+        <div class="sidebar col-2">
+          sidebar
+        </div>
+        <div class="main-content col-5">
+          <div class="row row-cols-3 p-3">
+            <div class="col p-3">
+              <div class="content">box</div>
+            </div>
+            <div class="col p-3">
+              <div class="content">box</div>
+            </div>
+            <div class="col p-3">
+              <div class="content">box</div>
+            </div>
+            <div class="col p-3">
+              <div class="content">box</div>
+            </div>
+            <div class="col p-3">
+              <div class="content">box</div>
+            </div>
+            <div class="col p-3">
+              <div class="content">box</div>
+            </div>
+            <div class="col p-3">
+              <div class="content">box</div>
+            </div>
+            <div class="col p-3">
+              <div class="content">box</div>
+            </div>
+            <div class="col p-3">
+              <div class="content">box</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="footer3" style="background-color: #b6e7ff;">footer3</div>
-      </div>
+      
+       <!-- footer用のdiv -->
+        <div class="footer row pt-3 justify-content-center">
+          <div class="col-6 p-3">
+            <div class="footer-content">footer1</div>
+          </div>
+          <div class="col-6 p-3">
+            <div class="footer-content">footer2</div>
+          </div>
+        </div>
+        
+        <div class="footer row pt-3 justify-content-center">
+          <div class="col-6 p-3">
+            <div class="footer-content">footer1</div>
+          </div>
+        </div>
+        
     </div>
-    
   </body>
 </html>
+
+
+<!-- 修正前の自分の記述 -->
+
+  <!--<body>-->
+  <!--  <div class="header px-20 py-30 " style="background-color: #ff00ff;">-->
+  <!--    <div class="row mx-20 ">-->
+  <!--      <div class="col ">-->
+  <!--        <div class="logo " style="background-color: #fbb3ff;">logo</div>-->
+  <!--      </div>-->
+  <!--      <div class="col">-->
+  <!--        <div class="logo2 " style="background-color: #fbb3ff;"></div>-->
+  <!--      </div>-->
+  <!--      <div class="cols-4"></div>-->
+  <!--        <div class="menu" style="background-color: #fbb3ff;">menu1</div>-->
+  <!--        <div class="menu" style="background-color: #fbb3ff;">menu2</div>-->
+  <!--        <div class="menu" style="background-color: #fbb3ff;">menu3</div>-->
+  <!--        <div class="menu" style="background-color: #fbb3ff;">menu4</div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  
+    <!--<div class="container">-->
+    <!--  <div class="row">-->
+    <!--    <div class="col-lg-4" style="background-color: #d8ffb6; height: 800px;">-->
+    <!--      <h2>sideber</h2>-->
+    <!--    </div>-->
+    <!--    <div class="col-lg-8" style="background-color: #00b522; height: 800px;">-->
+    <!--      <h2></h2>-->
+    <!--      <div class="row">-->
+    <!--        <div class="box" style="background-color: #fff75a;">box</div>-->
+    <!--        <div class="box" style="background-color: #fff75a;">box</div>-->
+    <!--        <div class="box" style="background-color: #fff75a;">box</div>-->
+    <!--        <div class="box" style="background-color: #fff75a;">box</div>-->
+    <!--        <div class="box" style="background-color: #fff75a;">box</div>-->
+    <!--        <div class="box" style="background-color: #fff75a;">box</div>-->
+    <!--        <div class="box" style="background-color: #fff75a;">box</div>-->
+    <!--        <div class="box" style="background-color: #fff75a;">box</div>-->
+    <!--        <div class="box" style="background-color: #fff75a;">box</div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
+    
+    <!--<div class="footer px-20 py-30 justify-content-center" style="background-color: #52a1ff;">-->
+    <!--  <div class="row mx-20 container-fluid">-->
+    <!--    <div class="cols-2"></div>-->
+    <!--      <div class="footer1" style="background-color: #b6e7ff;">footer1</div>-->
+    <!--      <div class="footer2" style="background-color: #b6e7ff;">footer2</div>-->
+    <!--  </div>-->
+    <!--  <div class="row justify-content-center">-->
+    <!--    <div class="footer3" style="background-color: #b6e7ff;">footer3</div>-->
+    <!--  </div>-->
+    <!--</div>-->
+    
+<!--  </body>-->
+<!--</html>-->
